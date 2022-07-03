@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Document</title>
+</head>
+<style>
+    .content-body p {
+        margin-bottom: 8px;
+    }
+
+    .content-body ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 8px;
+    }
+
+    .content-body p code {
+        background-color: rgb(175, 172, 172);
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .content-body blockquote {
+        padding: 15px 10px;
+        background-color: rgba(165, 162, 162, 0.176);
+        border-left: 5px solid rgb(176, 171, 253);
+        margin-bottom: 14px;
+    }
+
+    .content-body h2 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .content-body h3 {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .content-body h4 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .content-body .image-area {
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    .content-body .image-area {
+        font-size: 14px;
+        color: rgb(39, 38, 38);
+    }
+
+    .content-body .image-area img {
+        width: 100% !important;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+
+</style>
+<body class=" bg-gray-100 " data-theme="light">
+    <header>
+        <div class="navbar bg-base-100 flex-col md:flex-row">
+            <div class="mobile_area flex-1 w-full">
+                <a class="btn btn-ghost normal-case text-xl">Codingdz</a>
+                <div class="flex-none ml-auto md:hidden">
+                    <div class="flex-none">
+                        <button class="btn btn-square btn-ghost" onclick="toggle_menu();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 h-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="header-menu" class="desktop_area w-full bg-base-200 md:bg-base-100 md:w-fit header-menu-hidden">
+                <ul class="menu menu-vertical md:menu-horizontal  w-full ">
+                    <li><a class="active">Home</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>About me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class=" py-5 mx-auto max-w-5xl">
+        <div class="content px-4">
+            <div class="grid grid-cols-3">
+                <div class="quick-intro col-span-2  items-center flex ">
+                    <div class="short-bio">
+                        <h1 class="text-4xl font-bold mb-1">Hello I'm Berkane Tarek</h1>
+                        <p class="text-xl font-semibold mb-4">University student, and software enginerring.</p>
+                        <p class="text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ea molestiae, quos eius aliquid unde eligendi architecto deserunt, minima eaque necessitatibus neque numquam voluptates maiores delectus velit labore fugit voluptatem.</p>
+                    </div>
+                </div>
+                <div class="image-area col-span-1">
+                    <img class="w-72 h-72 object-cover rounded-full mx-auto " src="../src/images/per.jpg" alt="" srcset="">
+                    <div class="contact flex justify-center py-3 space-x-2 " >
+                        <div class="avatar ">
+                            <div class="w-12  rounded-full">
+                              <img src="https://placeimg.com/192/192/people" />
+                            </div>
+                          </div>
+                          <div class="avatar ">
+                            <div class="w-12  rounded-full">
+                              <img src="https://placeimg.com/192/192/people" />
+                            </div>
+                          </div>
+                          <div class="avatar ">
+                            <div class="w-12  rounded-full">
+                              <img src="https://placeimg.com/192/192/people" />
+                            </div>
+                          </div>
+                          <div class="avatar ">
+                            <div class="w-12  rounded-full">
+                              <img src="https://placeimg.com/192/192/people" />
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col w-full border-opacity-50">
+                <div class="divider">Resume</div>
+            </div>
+            <div class="content-body max-w-5xl mx-auto">
+                <h2 class="text-2xl font-bold mb-1">Study</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita est qui nobis commodi, sapiente magnam corrupti, dignissimos numquam ab laboriosam molestias reiciendis eos corporis nihil tempora maiores nulla hic voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatibus dolores ipsum aut distinctio perferendis quaerat alias quod incidunt harum voluptatem optio, amet aperiam, quia nihil deleniti odio rerum quasi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatibus dolores ipsum aut distinctio perferendis quaerat alias quod incidunt harum voluptatem optio, amet aperiam, quia nihil deleniti odio rerum quasi?</p>
+                <div class="image-area">
+                    <img src="images/univ.png" alt="" srcset="">
+                </div>
+                <h2 class="text-2xl font-bold mb-1">Project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatibus dolores ipsum aut distinctio perferendis quaerat alias quod incidunt harum voluptatem optio, amet aperiam, quia nihil deleniti odio rerum quasi?</p>
+                <div
+                class="box-skills grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-2 md:gap-4 lg:gap-8 justify-center  py-5 ">
+                <a href="#"
+                    class="card card-side md:flex-col   bg-base-100   top-0 hover:-top-2 transition-all duration-150">
+                    <figure><img class=" h-full object-cover w-32 md:w-full md:h-60"
+                            src="https://cdn.dribbble.com/userupload/3000615/file/still-ed2c718a1f1b9c9d455f58047b52971e.png?compress=1&resize=320x240&vertical=top"
+                            alt="Shoes" /></figure>
+                    <div class="card-body py-2 px-3 space-y-0 gap-1">
+                        <h2 class="card-title py-0 mb-0">
+                            Planet store
+                        </h2>
+                        <p class="text-sm">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-start">
+                            <div class="badge badge-outline  bg-sky-400  border-sky-400 text-white">Flutter</div>
+                            <div class="badge badge-outline  bg-cyan-600  border-cyan-600 text-white">FastAPI</div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="#"
+                    class="card card-side md:flex-col bg-base-100  top-0 hover:-top-2 transition-all duration-150">
+                    <figure><img class=" h-full object-cover w-32 md:w-full  md:h-60"
+                            src="https://cdn.dribbble.com/users/3041390/screenshots/15876985/media/c7eb96228a675d04391774498b9cc786.png?compress=1&resize=320x240&vertical=top"
+                            alt="Shoes" /></figure>
+                    <div class="card-body py-2 px-3">
+                        <h2 class="card-title">
+                            Admin dashboard
+                        </h2>
+                        <p class="text-sm">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-start">
+                            <div class="badge badge-outline  bg-green-800  border-green-800 text-white">Django</div>
+                            <div class="badge badge-outline  bg-green-800  border-green-800 text-white">Python3
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+
+               
+
+                <a href="#"
+                    class="card card-side md:flex-col  bg-base-100  top-0 hover:-top-2 transition-all duration-150">
+                    <figure><img class=" h-full object-cover w-32 md:w-full  md:h-60"
+                            src="https://cdn.dribbble.com/users/1094631/screenshots/15491024/media/bd73e5ca7a4daae5f4ccb7696cccd8cd.jpg?compress=1&resize=400x300&vertical=top"
+                            alt="Shoes" /></figure>
+                    <div class="card-body py-2 px-3">
+                        <h2 class="card-title">
+                            Home hack blog
+                        </h2>
+                        <p class="text-sm">If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-start">
+                            <div class="badge badge-outline  bg-green-800  border-green-800 text-white">Django</div>
+                            <div class="badge badge-outline  bg-purple-700  border-purple-700 text-white">Wagtail
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+
+
+            </div>
+                <h2 class="text-2xl font-bold mb-1">Skills</h2>
+            </div>
+
+            <section class="skills">
+                <div class="container mx-auto my-0 max-w-7xl px-3 py-8">
+                    <div class="skills-slider box-skills  py-8 text-center">
+                        <div class="avatar mx-5 carousel-item tooltip " data-tip="Python3">
+                            <div
+                                class="w-24 rounded-full     hover:border-2 hover:border-yellow-300 transition-all duration-100  bg-white   p-4">
+                                <img
+                                    src="https://store-images.s-microsoft.com/image/apps.37972.13510798882847238.aaaa73f1-0fc5-480b-8619-538d563b087a.494567bd-9177-4350-b15c-f9b823cb508c?mode=scale&q=90&h=300&w=300" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 z-50 carousel-item tooltip  " data-tip="Django">
+                            <div
+                                class="w-24 rounded-full   hover:border-2 hover:border-green-900 transition-all duration-100 bg-white  p-2">
+                                <img src="https://nextsoftware.io/files/images/logos/main/django-logo.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="FastAPI">
+                            <div
+                                class="w-24 rounded-full    hover:border-2 hover:border-cyan-700 transition-all duration-100 bg-white  ">
+                                <img src="https://media.zeemly.com/zeemly/product/fastapi.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="Flask">
+                            <div
+                                class="w-24 h-24  rounded-full     hover:border-2 hover:border-gray-900 transition-all duration-100 bg-white  p-4">
+                                <img class=" " src="https://flask-training-courses.uk/images/flask-logo.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="Scrapy">
+                            <div class="w-24 h-24  rounded-full   bg-white  p-2">
+                                <img class=" "
+                                    src="https://i0.wp.com/python.gotrained.com/wp-content/uploads/2017/05/scrapy-tutorial.png?w=525" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="Wagtail">
+                            <div class="w-24 h-24  rounded-full    bg-white  p-4">
+                                <img class=" "
+                                    src="https://www.ahayzen.com/media/images/wagtail-logo.2e16d0ba.fill-400x400.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="Dart">
+                            <div class="w-24 h-24  rounded-full    bg-white  p-4">
+                                <img src="https://appstimes.in/wp-content/uploads/2015/05/dart_icon.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip z-50" data-tip="Flutter">
+                            <div class="w-24 h-24  rounded-full    bg-white  p-4">
+                                <img src="https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 z-50 carousel-item tooltip  " data-tip="Django">
+                            <div
+                                class="w-24 rounded-full   hover:border-2 hover:border-green-900 transition-all duration-100 bg-white  p-2">
+                                <img src="https://nextsoftware.io/files/images/logos/main/django-logo.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="FastAPI">
+                            <div
+                                class="w-24 rounded-full    hover:border-2 hover:border-cyan-700 transition-all duration-100 bg-white  ">
+                                <img src="https://media.zeemly.com/zeemly/product/fastapi.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="Flask">
+                            <div
+                                class="w-24 h-24  rounded-full     hover:border-2 hover:border-gray-900 transition-all duration-100 bg-white  p-4">
+                                <img class=" " src="https://flask-training-courses.uk/images/flask-logo.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="Scrapy">
+                            <div class="w-24 h-24  rounded-full   bg-white  p-2">
+                                <img class=" "
+                                    src="https://i0.wp.com/python.gotrained.com/wp-content/uploads/2017/05/scrapy-tutorial.png?w=525" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="Wagtail">
+                            <div class="w-24 h-24  rounded-full    bg-white  p-4">
+                                <img class=" "
+                                    src="https://www.ahayzen.com/media/images/wagtail-logo.2e16d0ba.fill-400x400.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip" data-tip="Dart">
+                            <div class="w-24 h-24  rounded-full    bg-white  p-4">
+                                <img src="https://appstimes.in/wp-content/uploads/2015/05/dart_icon.png" />
+                            </div>
+                        </div>
+                        <div class="avatar mx-5 carousel-item tooltip z-50" data-tip="Flutter">
+                            <div class="w-24 h-24  rounded-full    bg-white  p-4">
+                                <img src="https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png" />
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </section>
+
+        </div>
+    </section>
+  
+    <footer class="footer p-10  text-base-content bg-white">
+        <div>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+        </div>
+        <div>
+            <span class="footer-title">Projects</span>
+            <a class="link link-hover">Blog</a>
+            <a class="link link-hover">Blog</a>
+        </div>
+        <div>
+            <span class="footer-title">Credit</span>
+            <a class="link link-hover">About me</a>
+            <a class="link link-hover">Contact</a>
+        </div>
+        <div>
+            <span class="footer-title">Legal</span>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

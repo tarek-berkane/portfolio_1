@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    .content-body p {
+        margin-bottom: 8px;
+    }
+
+    .content-body ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 8px;
+    }
+
+    /* .content-body p code {
+        background-color: rgb(175, 172, 172);
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .content-body blockquote {
+        padding: 15px 10px;
+        background-color: rgba(165, 162, 162, 0.176);
+        border-left: 5px solid rgb(176, 171, 253);
+        margin-bottom: 14px;
+    }
+
+    .content-body h2 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .content-body h3 {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .content-body h4 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .content-body .image-area {
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    .content-body .image-area {
+        font-size: 14px;
+        color: rgb(39, 38, 38);
+    }
+
+    .content-body .image-area img {
+        width: 100% !important;
+        max-height: 500px;
+        object-fit: cover;
+        border-radius: 5px;
+    } */
+
+    .content-body a {
+        color: rgb(60, 164, 243);
+        text-decoration: underline;
+    }
+</style>
+
+<body data-theme="light" class="bg-gray-100">
+    <header>
+        <div class="navbar bg-base-100 flex-col md:flex-row">
+            <div class="mobile_area flex-1 w-full">
+                <a class="btn btn-ghost normal-case text-xl">Codingdz</a>
+                <div class="flex-none ml-auto md:hidden">
+                    <div class="flex-none">
+                        <button class="btn btn-square btn-ghost" onclick="toggle_menu();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 h-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="header-menu" class="desktop_area w-full bg-base-200 md:bg-base-100 md:w-fit header-menu-hidden">
+                <ul class="menu menu-vertical md:menu-horizontal  w-full ">
+                    <li><a class="active">Home</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>About me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container  max-w-full md:max-w-6xl mx-auto py-5">
+        <section>
+            <div class="grid grid-cols-6">
+                <section id="content" class=" min-h-full col-span-6 md:col-span-4  md:px-4">
+                    <article>
+                        <img src="../src/images/a.jpg"
+                            class="bg-white max-h-96 md:rounded-md min-w-full mb-3 object-cover" />
+                        <!-- PROJECT TITLE -->
+                        <div class="container px-3">
+                            <h1 class="text-3xl md:text-4xl font-bold mb-2 py-0">Working with JavaScript</h1>
+                            <div id="meta-data" class="mb-5">
+
+                                <ul class="text-sm flex space-x-3">
+                                    <li class="tooltip tooltip-bottom" data-tip="publish date"><span><i
+                                                class="fa-solid fa-calendar"></i></span> <span>25-12-2022</span></li>
+                                    <li class="tooltip tooltip-bottom" data-tip="tags"><span><i
+                                                class="fa-solid fa-tag"></i></span>
+                                        <span>
+                                            <a href="#"
+                                                class="badge bg-green-700 border-green-700 hover:bg-green-900 text-white ">Python3</a>
+                                                <a href="#"
+                                                class="badge bg-purple-700 border-purple-700 hover:bg-purple-900 text-white ">Wagtail</a>
+                                                <a href="#"
+                                                    class="badge bg-gray-500 border-gray-500 hover:bg-gray-500 text-white ">show page</a>
+
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- PROJECT BIO -->
+                        <div class="project-bio  bg-gray-200 px-4 py-2 border-none cursor-pointer md:hidden" onclick="toggle_bio(this);">
+                            <div class="project-body">
+                                <div class="project-bio-title flex items-center">
+                                    <h2 class="text-xl ">Project bio</h2>
+                                    <div class="icon-area ml-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-plus text-xs w-5 h-5" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <line x1="12" y1="5" x2="12" y2="19" />
+                                            <line x1="5" y1="12" x2="19" y2="12" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-bio-content pl-2 hidden">
+                                    <h2 class="text-xl font-bold mb-2">Project information</h2>
+                                    <p><span class="text-base font-bold ">Publish date:</span> 22-02-2022</p>
+                                    <p><span class="text-base font-bold ">Github page:</span> <a href="#"
+                                            class="text-blue-500">link
+                                            here</a></p>
+                                    <p><span class="text-base font-bold ">Demo:</span> <a href="#"
+                                            class="text-blue-500">link
+                                            here</a></p>
+                                    <h2 class="text-base  font-bold">Project language</h2>
+                                    <ul class="list-disc pl-6">
+                                        <li>Python</li>
+                                        <li>Javascript</li>
+                                        <li>Dart</li>
+                                    </ul>
+                                    <h2 class="text-base  font-bold">Frameworks used</h2>
+                                    <ul class="list-disc pl-6">
+                                        <li>Django</li>
+                                        <li>Wagtail</li>
+                                        <li>Flutter</li>
+                                    </ul>
+                                    <h2 class="text-base  font-bold">Libraries used</h2>
+                                    <ul class="list-disc pl-6">
+                                        <li>Jquery</li>
+                                        <li>Tabler</li>
+                                        <li>Tailwinds</li>
+                                    </ul>
+                                    <h2 class="text-base  font-bold">Other tools</h2>
+                                    <ul class="list-disc pl-6">
+                                        <li>Sqlite</li>
+                                        <li>Redis</li>
+                                        <li>Docker</li>
+                                        <li>Disque</li>
+                                        <li>Google analytic</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content-body px-4">
+                            <h2 class="text-2xl font-semibold mt-4 mb-1">Hello world</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odit corporis veniam
+                                dolorum? Esse <a href="#">hello world</a> doloribus impedit iure vitae, quam delectus
+                                sint, saepe laboriosam
+                                architecto et facere reiciendis voluptas incidunt praesentium.</p>
+                            <h3 class="text-xl font-semibold mb-1">Hello world</h3>
+                            <p>Lorem ipsum dolor sit <code>print('hello')</code> amet consectetur adipisicing elit.
+                                Beatae odit corporis veniam dolorum? Esse doloribus impedit iure vitae, quam delectus
+                                sint, saepe laboriosam architecto et facere reiciendis voluptas incidunt praesentium.
+                            </p>
+
+                            <h4 class="text-base font-semibold py-4 mb-1">We always use Hello world</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odit corporis veniam
+                                dolorum? Esse doloribus impedit iure vitae, quam delectus sint, saepe laboriosam
+                                architecto et facere reiciendis voluptas incidunt praesentium.</p>
+                            <h2 class="text-2xl font-semibold mt-4">Hello world</h2>
+                            <div class="image-area mb-3 text-center text-gray-600 text-sm">
+                                <img class="max-h-96 max-w-full object-cover rounded-md" src="../src/images/fff.jpg"
+                                    alt="">
+                                <caption class="">Home page with javascript</caption>
+                            </div>
+                            <blockquote>
+                                Are you being good to your self ?
+                            </blockquote>
+                            <h4>People can help u</h4>
+                            <h4 class="text-base font-semibold">We always use Hello world</h4>
+                            <ul>
+                                <li>hello world</li>
+                                <li>hello world</li>
+                                <li>hello world</li>
+                                <li>hello world</li>
+                            </ul>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odit corporis veniam
+                                dolorum? Esse doloribus impedit iure vitae, quam delectus sint, saepe laboriosam
+                                architecto et facere reiciendis voluptas incidunt praesentium.</p>
+
+                            <div class="mockup-code">
+                                <pre data-prefix="$"><code>npm i daisyui</code></pre>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class=" col-span-6 md:col-span-2 ">
+                    <div class="devider"></div>
+                    <div class="bg-white w-100 p-4 mb-5 rounded-md hidden md:block">
+                        <h2 class="text-xl font-bold mb-2">Project information</h2>
+                        <p><span class="text-base font-bold ">Publish date:</span> 22-02-2022</p>
+                        <p><span class="text-base font-bold ">Github page:</span> <a href="#" class="text-blue-500">link
+                                here</a></p>
+                        <p><span class="text-base font-bold ">Demo:</span> <a href="#" class="text-blue-500">link
+                                here</a></p>
+                        <h2 class="text-base  font-bold">Project language</h2>
+                        <ul class="list-disc pl-6">
+                            <li>Python</li>
+                            <li>Javascript</li>
+                            <li>Dart</li>
+                        </ul>
+                        <h2 class="text-base  font-bold">Frameworks used</h2>
+                        <ul class="list-disc pl-6">
+                            <li>Django</li>
+                            <li>Wagtail</li>
+                            <li>Flutter</li>
+                        </ul>
+                        <h2 class="text-base  font-bold">Libraries used</h2>
+                        <ul class="list-disc pl-6">
+                            <li>Jquery</li>
+                            <li>Tabler</li>
+                            <li>Tailwinds</li>
+                        </ul>
+                        <h2 class="text-base  font-bold">Other tools</h2>
+                        <ul class="list-disc pl-6">
+                            <li>Sqlite</li>
+                            <li>Redis</li>
+                            <li>Docker</li>
+                            <li>Disque</li>
+                            <li>Google analytic</li>
+                        </ul>
+                    </div>
+
+                    <div class=" w-100 py-4  mb-5 rounded-md">
+                        <h2 class="text-xl font-bold pl-2 mb-2">Other projects</h2>
+                        <a href="#"
+                            class="card card-side    bg-base-100 shadow-xl  top-0 hover:-top-1 transition-all duration-150 rounded-none mb-3">
+                            <figure><img class=" h-full object-cover w-32 "
+                                    src="https://cdn.dribbble.com/userupload/3000615/file/still-ed2c718a1f1b9c9d455f58047b52971e.png?compress=1&resize=320x240&vertical=top"
+                                    alt="Shoes" /></figure>
+                            <div class="card-body py-2 px-3 space-y-0 gap-1">
+                                <h2 class="card-title py-0 mb-0">
+                                    Planet store
+                                </h2>
+                                <p class="text-sm">If a dog chews shoes whose shoes does he choose?</p>
+                                <div class="card-actions justify-start">
+                                    <div class="badge badge-outline  bg-sky-400  border-sky-400 text-white">Flutter
+                                    </div>
+                                    <div class="badge badge-outline  bg-cyan-600  border-cyan-600 text-white">FastAPI
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#"
+                            class="card card-side    bg-base-100 shadow-xl  top-0 hover:-top-1 transition-all duration-150 rounded-none mb-3">
+                            <figure><img class=" h-full object-cover w-32 "
+                                    src="https://cdn.dribbble.com/users/3041390/screenshots/15876985/media/c7eb96228a675d04391774498b9cc786.png?compress=1&resize=320x240&vertical=top"
+                                    alt="Shoes" /></figure>
+                            <div class="card-body py-2 px-3 space-y-0 gap-1">
+                                <h2 class="card-title py-0 mb-0">
+                                    Planet store
+                                </h2>
+                                <p class="text-sm">If a dog chews shoes whose shoes does he choose?</p>
+                                <div class="card-actions justify-start">
+                                    <div class="badge badge-outline  bg-green-800  border-green-800 text-white">Django
+                                    </div>
+                                    <div class="badge badge-outline  bg-green-800  border-green-800 text-white">Python3
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#"
+                            class="card card-side    bg-base-100 shadow-xl  top-0 hover:-top-1 transition-all duration-150 rounded-none mb-3">
+                            <figure><img class=" h-full object-cover w-32 "
+                                    src="https://cdn.dribbble.com/users/472201/screenshots/15993980/media/b30b0cd6a97b703a2a5d722223a036be.jpg?compress=1&resize=320x240&vertical=top"
+                                    alt="Shoes" /></figure>
+                            <div class="card-body py-2 px-3 space-y-0 gap-1">
+                                <h2 class="card-title py-0 mb-0">
+                                    Planet store
+                                </h2>
+                                <p class="text-sm">If a dog chews shoes whose shoes does he choose?</p>
+                                <div class="card-actions justify-start">
+                                    <div class="badge badge-outline  bg-green-800  border-green-800 text-white">Django
+                                    </div>
+                                    <div class="badge badge-outline  bg-green-800  border-green-800 text-white">Python3
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+    </div>
+    <!-- Header -->
+    <!-- grid -->
+    <!-- S1 Content -->
+    <!-- Image show -->
+    <!-- title -->
+    <!-- meta data -->
+    <!-- project info HIDDEN -->
+    <!-- CONTENT -->
+    <!-- RECOMONDATION -->
+    <!-- Comment -->
+
+    <!-- S2 project info HIDDENT IN SMALL VIEWS -->
+
+    <footer class="footer p-10  text-base-content bg-white">
+        <div>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+        </div>
+        <div>
+            <span class="footer-title">Projects</span>
+            <a class="link link-hover">Blog</a>
+            <a class="link link-hover">Blog</a>
+        </div>
+        <div>
+            <span class="footer-title">Credit</span>
+            <a class="link link-hover">About me</a>
+            <a class="link link-hover">Contact</a>
+        </div>
+        <div>
+            <span class="footer-title">Legal</span>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </div>
+    </footer>
+
+
+    <script>
+
+        const icon_container_name = "icon-area";
+        const project_bio_body_name = "project-bio-content";
+
+        const open_bio_icon = `<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus w-5 h-5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="12" y1="5" x2="12" y2="19" />
+  <line x1="5" y1="12" x2="19" y2="12" />
+</svg>`
+
+        const close_bio_icon = `
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus w-5 h-5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="5" y1="12" x2="19" y2="12" />
+</svg>`
+
+        function toggle_bio(elem) {
+            var icon_container = elem.getElementsByClassName(icon_container_name)[0];
+            var project_body_elem = elem.getElementsByClassName(project_bio_body_name)[0];
+            if (project_body_elem && icon_container) {
+                if (project_body_elem.classList.contains('hidden')) {
+                    project_body_elem.classList.remove('hidden')
+                    icon_container.innerHTML = close_bio_icon;
+                } else {
+                    project_body_elem.classList.add('hidden')
+                    icon_container.innerHTML = open_bio_icon;
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
