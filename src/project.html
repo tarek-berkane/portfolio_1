@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.css"
+        integrity="sha512-c7kgo7PyRiLnl7mPdTDaH0dUhJMpij4aXRMOHmXaFCu96jInpKc8sZ2U6lby3+mOpLSSlAndRtH6dIonO9qVEQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
@@ -107,7 +111,7 @@
         <section>
             <div class="grid grid-cols-6">
                 <section id="content" class=" min-h-full col-span-6 md:col-span-4  md:px-4">
-                    <article>
+                    <article id="page-content">
                         <img src="../src/images/a.jpg"
                             class="bg-white max-h-96 md:rounded-md min-w-full mb-3 object-cover" />
                         <!-- PROJECT TITLE -->
@@ -123,10 +127,11 @@
                                         <span>
                                             <a href="#"
                                                 class="badge bg-green-700 border-green-700 hover:bg-green-900 text-white ">Python3</a>
-                                                <a href="#"
+                                            <a href="#"
                                                 class="badge bg-purple-700 border-purple-700 hover:bg-purple-900 text-white ">Wagtail</a>
-                                                <a href="#"
-                                                    class="badge bg-gray-500 border-gray-500 hover:bg-gray-500 text-white ">show page</a>
+                                            <a href="#"
+                                                class="badge bg-gray-500 border-gray-500 hover:bg-gray-500 text-white ">show
+                                                page</a>
 
                                         </span>
                                     </li>
@@ -135,7 +140,8 @@
 
                         </div>
                         <!-- PROJECT BIO -->
-                        <div class="project-bio  bg-gray-200 px-4 py-2 border-none cursor-pointer md:hidden" onclick="toggle_bio(this);">
+                        <div class="project-bio  bg-gray-200 px-4 py-2 border-none cursor-pointer md:hidden"
+                            onclick="toggle_bio(this);">
                             <div class="project-body">
                                 <div class="project-bio-title flex items-center">
                                     <h2 class="text-xl ">Project bio</h2>
@@ -373,9 +379,12 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+        integrity="sha512-i5q29evO2Z4FHGCO+d5VLrwgre/l+vaud5qsVqQbPXvHmD9obORDrPIGFpP2+ep+HY+z41kAmVFRHqQAjSROmA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
 
     <script>
-
         const icon_container_name = "icon-area";
         const project_bio_body_name = "project-bio-content";
 
@@ -405,6 +414,11 @@
                 }
             }
         }
+    </script>
+
+    <script>
+        const viewer = new Viewer(document.getElementById('page-content'), {
+        });
     </script>
 </body>
 

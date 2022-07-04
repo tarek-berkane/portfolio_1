@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../dist/output.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
@@ -15,13 +17,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-<style>
-    @media (max-width: 768px) {
-        .header-menu-hidden {
-            display: none;
-        }
-    }
-</style>
 
 <body class="bg-gray-200" data-theme="corporate">
     <header>
@@ -338,16 +333,10 @@
         }
         );
     </script>
+  
 
-    <script>
-        const menu_close = "header-menu-hidden";
-        const menu_id_name = "header-menu";
+    <script src="js/main.js"></script>
 
-        function toggle_menu() {
-            var menu = document.getElementById(menu_id_name);
-            menu.classList.toggle(menu_close);
-        }
-    </script>
 </body>
 
 </html>
