@@ -20,9 +20,9 @@
 
 <body class="bg-gray-200" data-theme="corporate">
     <header>
-        <div class="navbar bg-base-100 flex-col md:flex-row">
+        <div class="navbar bg-base-100 flex-col md:flex-row px-0">
             <div class="mobile_area flex-1 w-full">
-                <a class="btn btn-ghost normal-case text-xl">Codingdz</a>
+                <a href="index.html" class="btn btn-ghost normal-case text-xl">Codingdz</a>
                 <div class="flex-none ml-auto md:hidden">
                     <div class="flex-none">
                         <button class="btn btn-square btn-ghost" onclick="toggle_menu();">
@@ -36,12 +36,12 @@
                     </div>
                 </div>
             </div>
-            <div id="header-menu" class="desktop_area w-full bg-base-200 md:bg-base-100 md:w-fit header-menu-hidden">
+            <div id="header-menu" class="desktop_area w-full bg-gray-100 md:bg-base-100 md:w-fit header-menu-hidden">
                 <ul class="menu menu-vertical md:menu-horizontal  w-full ">
-                    <li><a class="active">Home</a></li>
-                    <li><a>Projects</a></li>
+                    <li><a href="#" class="active" >Home</a></li>
+                    <li><a href="search.html" >Projects</a></li>
                     <li><a>Blog</a></li>
-                    <li><a>About me</a></li>
+                    <li><a href="about.html">About me</a></li>
                 </ul>
             </div>
         </div>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
 
-                    <img src="../src/images/intro.svg" alt="">
+                    <img class="p-5" src="../src/images/page_show.png" alt="">
 
                 </div>
 
@@ -76,54 +76,97 @@
         <div class="container mx-auto my-0 max-w-6xl px-3 py-8">
             <h2 class="text-xl font-bold text-center ">My skills</h2>
             <div class="skills-slider box-skills  py-8 ">
-                <div class="avatar mx-5 carousel-item tooltip " data-tip="Python3">
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
                     <div
-                        class="w-24 rounded-full     hover:border-2 hover:border-yellow-300 transition-all duration-100  bg-white   p-4">
+                        class="w-24    transition-all duration-100  p-2">
                         <img
-                            src="https://store-images.s-microsoft.com/image/apps.37972.13510798882847238.aaaa73f1-0fc5-480b-8619-538d563b087a.494567bd-9177-4350-b15c-f9b823cb508c?mode=scale&q=90&h=300&w=300" />
+                            src="images/logs/python.png" />
                     </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Python3</p>
                 </div>
-                <div class="avatar mx-5 z-50 carousel-item tooltip  " data-tip="Django">
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
                     <div
-                        class="w-24 rounded-full   hover:border-2 hover:border-green-900 transition-all duration-100 bg-white  p-2">
-                        <img src="https://nextsoftware.io/files/images/logos/main/django-logo.png" />
+                        class="w-24    transition-all duration-100  p-2">
+                        <img
+                            src="images/logs/django.png" />
                     </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Django</p>
                 </div>
-                <div class="avatar mx-5 carousel-item tooltip" data-tip="FastAPI">
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
                     <div
-                        class="w-24 rounded-full    hover:border-2 hover:border-cyan-700 transition-all duration-100 bg-white  ">
-                        <img src="https://media.zeemly.com/zeemly/product/fastapi.png" />
+                        class="w-24    transition-all duration-100  ">
+                        <img src="images/logs/fastapi.png" />
+
                     </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">FastAPI</p>
                 </div>
-                <div class="avatar mx-5 carousel-item tooltip" data-tip="Flask">
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
                     <div
-                        class="w-24 h-24  rounded-full     hover:border-2 hover:border-gray-900 transition-all duration-100 bg-white  p-4">
-                        <img class=" " src="https://flask-training-courses.uk/images/flask-logo.png" />
+                        class="w-24    transition-all duration-100  ">
+                        <img class=" " src="images/logs/flask.png" />
+
                     </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Flask</p>
                 </div>
-                <div class="avatar mx-5 carousel-item tooltip" data-tip="Scrapy">
-                    <div class="w-24 h-24  rounded-full   bg-white  p-2">
-                        <img class=" "
-                            src="https://i0.wp.com/python.gotrained.com/wp-content/uploads/2017/05/scrapy-tutorial.png?w=525" />
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
+                    <div
+                        class="w-24    transition-all duration-100  ">
+                        <img class=" " src="images/logs/scrapy.png" />
+
                     </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Scrapy</p>
                 </div>
-                <div class="avatar mx-5 carousel-item tooltip" data-tip="Wagtail">
-                    <div class="w-24 h-24  rounded-full    bg-white  p-4">
-                        <img class=" "
-                            src="https://www.ahayzen.com/media/images/wagtail-logo.2e16d0ba.fill-400x400.png" />
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
+                    <div
+                        class="w-24    transition-all duration-100  ">
+                        <img class=" " src="images/logs/wagtail.png" />
+
                     </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Wagtail</p>
                 </div>
-                <div class="avatar mx-5 carousel-item tooltip" data-tip="Dart">
-                    <div class="w-24 h-24  rounded-full    bg-white  p-4">
-                        <img src="https://appstimes.in/wp-content/uploads/2015/05/dart_icon.png" />
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
+                    <div
+                        class="w-24    transition-all duration-100  ">
+                        <img class=" " src="images/logs/dart.png" />
+
                     </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Dart</p>
                 </div>
-                <div class="avatar mx-5 carousel-item tooltip" data-tip="Flutter">
-                    <div class="w-24 h-24  rounded-full    bg-white  p-4">
-                        <img src="https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png" />
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
+                    <div
+                        class="w-24    transition-all duration-100  ">
+                        <img class=" " src="images/logs/flutter.png" />
+
                     </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Flutter</p>
                 </div>
 
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
+                    <div
+                        class="w-24    transition-all duration-100  ">
+                        <img class=" " src="images/logs/bootstrap.png" />
+
+                    </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Bootstrap</p>
+                </div>
+
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
+                    <div
+                        class="w-24    transition-all duration-100  ">
+                        <img class=" " src="images/logs/vue.png" />
+
+                    </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Vue js</p>
+                </div>
+
+                <div class="avatar mx-5 carousel-item text-center grayscale hover:grayscale-0  transition-all duration-100 group" >
+                    <div
+                        class="w-24    transition-all duration-100  ">
+                        <img class=" " src="images/logs/tailwind.png" />
+
+                    </div>
+                    <p class="text-xl  font-sans font-bold text-gray-400 group-hover:text-gray-700 transition-colors">Tailwind css</p>
+                </div>
             </div>
 
         </div>
