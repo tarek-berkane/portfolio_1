@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../dist/output.css">
     <title>Document</title>
 </head>
@@ -68,9 +69,9 @@
 
 
 </style>
-<body class=" bg-gray-100 " data-theme="light">
+<body class=" bg-gray-100 " data-theme="corporate">
     <header>
-        <div class="navbar bg-base-100 flex-col md:flex-row">
+        <div class="navbar bg-base-100 flex-col md:flex-row px-0 md:px-2">
             <div class="mobile_area flex-1 w-full">
                 <a href="index.html" class="btn btn-ghost normal-case text-xl">Codingdz</a>
                 <div class="flex-none ml-auto md:hidden">
@@ -99,34 +100,35 @@
     <section class=" py-5 mx-auto max-w-5xl">
         <div class="content px-4">
             <div class="grid grid-cols-3">
-                <div class="quick-intro col-span-2  items-center flex ">
+                <div class="quick-intro col-span-3 md:col-span-2  order-2 md:order-1 items-center flex ">
                     <div class="short-bio">
-                        <h1 class="text-4xl font-bold mb-1">Hello I'm Berkane Tarek</h1>
-                        <p class="text-xl font-semibold mb-4">University student, and software enginerring.</p>
+                        <h1 class="text-3xl md:text-4xl font-bold text-center md:text-left mb-2 md:mb-1">Hello I'm Berkane Tarek</h1>
+                        <p class="text-xl font-semibold mb-2">University student, and software enginerring.</p>
                         <p class="text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ea molestiae, quos eius aliquid unde eligendi architecto deserunt, minima eaque necessitatibus neque numquam voluptates maiores delectus velit labore fugit voluptatem.</p>
                     </div>
                 </div>
-                <div class="image-area col-span-1">
+                <div class="image-area col-span-3 md:col-span-1 order-1 md:order-2">
                     <img class="w-72 h-72 object-cover rounded-full mx-auto " src="../src/images/per.jpg" alt="" srcset="">
                     <div class="contact flex justify-center py-3 space-x-2 " >
                         <div class="avatar ">
-                            <div class="w-12  rounded-full">
-                              <img src="https://placeimg.com/192/192/people" />
+                            <div class="w-12  rounded-full  cursor-pointer" title="github">
+                                <a href="#">
+                                    <img src="images/social/github-icon.png" />
+                                </a>
                             </div>
                           </div>
-                          <div class="avatar ">
+                          <div class="avatar " title="linkedin">
                             <div class="w-12  rounded-full">
-                              <img src="https://placeimg.com/192/192/people" />
+                                <a href="#">
+                                    <img src="images/social/linkedin-icon.png" />
+                                </a>
                             </div>
                           </div>
-                          <div class="avatar ">
+                          <div class="avatar " title="twiiter">
                             <div class="w-12  rounded-full">
-                              <img src="https://placeimg.com/192/192/people" />
-                            </div>
-                          </div>
-                          <div class="avatar ">
-                            <div class="w-12  rounded-full">
-                              <img src="https://placeimg.com/192/192/people" />
+                                <a href="#">
+                                    <img src="images/social/twitter-icon.png" />
+                                </a>
                             </div>
                           </div>
                     </div>
@@ -338,6 +340,7 @@
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 
 </body>
 
