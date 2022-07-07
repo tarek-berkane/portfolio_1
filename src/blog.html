@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-200" data-theme="corporate">
+    <div class="h-screen">
+
+    <header>
+        <div class="navbar bg-base-100 flex-col md:flex-row px-0 md:px-2">
+            <div class="mobile_area flex-1 w-full">
+                <a href="index.html" class="btn btn-ghost normal-case text-xl">Codingdz</a>
+                <div class="flex-none ml-auto md:hidden">
+                    <div class="flex-none">
+                        <button class="btn btn-square btn-ghost" onclick="toggle_menu();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 h-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="header-menu" class="desktop_area w-full bg-gray-100 md:bg-base-100 md:w-fit header-menu-hidden">
+                <ul class="menu menu-vertical md:menu-horizontal  w-full ">
+                    <li><a href="#" class="active" >Home</a></li>
+                    <li><a href="search.html" >Projects</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a href="about.html">About me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="h-full flex flex-col md:justify-center items-center bg-white md:pb-20">
+        <div class="md:h-96 max-w-[800px]  object-cover  overflow-hidden mb-4 py-4">
+            <img  src="images/construction.jpg" alt="">
+        </div>
+        <h1 class="text-2xl font-semibold text-gray-700 mb-3">Page under construction</h1>
+        <a href="index.html" class="btn btn-sm btn-info btn-outline">Go back</a>
+    </div>
+    </div>
+
+
+    <footer class="footer p-10  text-base-content bg-white">
+        <div>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+        </div>
+        <div>
+            <span class="footer-title">Projects</span>
+            <a class="link link-hover">Blog</a>
+            <a class="link link-hover">Blog</a>
+        </div>
+        <div>
+            <span class="footer-title">Credit</span>
+            <a class="link link-hover">About me</a>
+            <a class="link link-hover">Contact</a>
+        </div>
+        <div>
+            <span class="footer-title">Legal</span>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $('.skills-slider').slick({
+            slidesToShow: 8,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 620,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                }
+            ]
+        }
+        );
+    </script>
+  
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
